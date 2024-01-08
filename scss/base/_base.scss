@@ -6,5 +6,11 @@
     box-sizing: border-box;
 }
 body {
-
+    font-family: var(--main-font);
+    font-size: 24px;
+}
+.container {
+    max-width: 1262px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
