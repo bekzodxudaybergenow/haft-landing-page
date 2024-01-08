@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1262px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/Inter-Regular.woff2") format("woff2"), url("/fonts/inter/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/Inter-Bold.woff2") format("woff2"), url("/fonts/inter/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/Inter-Black.woff2") format("woff2"), url("/fonts/inter/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --main-font: "Inter", sans-serif;
+  --zima-blue: #2C58F1;
+  --text-color: #666666;
+  --title-color: #262626;
+  --white: #ffffff;
+}/*# sourceMappingURL=main.css.map */
