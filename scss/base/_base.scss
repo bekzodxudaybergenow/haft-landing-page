@@ -27,6 +27,14 @@ body {
     border-radius: 8px;
     background-color: var(--zima-blue);
     text-decoration: none;
+    transition: opacity ease-in-out .2s;
+
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        opacity: 1;
+    }
 }
 .btn2 {
     height: 38px;
