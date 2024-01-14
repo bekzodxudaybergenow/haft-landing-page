@@ -94,6 +94,17 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header__logo {
+        margin: 0;
+        transition: opacity ease-in-out .2s;
+
+        &:hover {
+            opacity: .7;
+        }
+        &:active {
+            opacity: 1;
+        }
+    }
     .header__menu {
         display: none;
     }
@@ -104,14 +115,82 @@
     }
     .header__action--btn-more {
         display: flex;
+        overflow: hidden;
     }
     .header__action--select {
         width: 50px;
         height: 48px;
         margin: 0;
     }
-    .header__nav .header__menu--sidebar{
-        display: block;
-        background-color: lightblue;
+    .header__menu--sidebar {
+        display: none;
     }
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 320px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+    .header__nav--link:not(.header__nav--link-active) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        position: relative;
+        padding-bottom: 4px;
+        letter-spacing: 0.35px;
+        
+        &:hover {
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        &:active {
+            opacity: .7;
+        }
+        &:nth-child(2) {
+            letter-spacing: 0.33px;
+        }
+        &:hover::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 4px;
+            background-color: var(--zima-blue);
+        }
+    }
+    .header__nav--link-active {
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 8px;
+        letter-spacing: 0.35px;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 4px;
+            background-color: var(--zima-blue);
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header__nav {
+        margin-right: 80px;
+        max-width: 360px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header__nav {
+        margin-right: 180px;
+        max-width: 400px;
+    }
+    
 }
