@@ -1,0 +1,90 @@
+.hero {
+    padding: 20px 0 40px;
+    background-image: url('/images/hero/accent1.svg');
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position: -100px -50px;
+}
+.hero__row {
+}
+.hero__content {
+    max-width: 460px;
+}
+.hero__content--title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 50.4px;
+    margin-bottom: 14px;
+}
+.hero__content--desc {
+    font-size: 18px;
+    line-height: 23.6px;
+    margin-bottom: 40px;
+}
+.hero__content-btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.hero__btns--btn-buy,
+.hero__btns--btn-download {
+    max-width: 360px;
+    width: 100%;
+}
+.hero__btns--btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--zima-blue);
+}
+@media screen and (min-width: 590px) {
+    .hero {
+        padding: 30px 0 80px;
+        background-size: 564px 515px;
+        background-position: 221px -59px;
+    }
+    .hero__content-btns {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .hero__btns--btn-buy {
+        width: 100px;
+    }
+    .hero__btns--btn-download {
+        width: 170px;
+        height: 48px;
+        background-image: url('/images/hero/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 128px 13px;
+        padding-right: 23px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 80px 0 60px;
+    }
+    .hero__content {
+        max-width: 500px;
+    }
+    .hero__content--title {
+        font-size: 54px;
+        line-height: 60.4px;
+        margin-bottom: 24px;
+    }
+    .hero__content--desc {
+        font-size: 20px;
+        line-height: 28.6px;
+        margin-bottom: 52px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    // .hero__row {
+    //     background-image: url('/images/hero/hero-bg.jpg');
+    //     background-repeat: no-repeat;
+    //     background-position: right 50px;
+    // }
+}
