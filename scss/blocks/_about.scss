@@ -1,0 +1,126 @@
+.about {
+    padding: 40px 0;
+    color: var(--white);
+}
+.about__row {
+    background-color: var(--zima-blue);
+    border-radius: 14px;
+    padding: 40px 14px;
+}
+.about__content {
+    margin-bottom: 42px;
+}
+.about__content--title {
+    color: inherit;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.about__content--desc {
+    font-size: 18px;
+    color: inherit;
+    line-height: 22px;
+}
+.about__statistics-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+}
+.about__list--item {
+    display: grid;
+    width: 250px;
+    column-gap: 16px;
+    grid-template-columns: 52px 120px;
+    grid-template-rows: auto auto;
+}
+.about__item--image {
+    width: 52px;
+    height: 52px;
+    grid-row: 1 / 3;
+}
+.about__item--num {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34.8px;
+}
+.about__items--subtitle {
+    grid-column: 2 / 3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.6px;
+}
+@media screen and (min-width: 590px) {
+    .about__content {
+        max-width: 522px;
+        width: 100%;
+    }
+    .about__content--title {
+        font-size: 42px;
+    }
+    .about__statistics-list {
+        max-width: 522px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .about__row {
+        padding: 40px 14px;
+    }
+    .about__content--title {
+        font-size: 48px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .about {
+        padding: 0 0 60px;
+    }
+    .about__row {
+        display: flex;
+        column-gap: 40px;
+        padding: 50px 44px;
+    }
+    .about__content {
+        margin-bottom: 0;
+    }
+    .about__content--title {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    .about__list--item {
+        width: 200px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .about__row {
+        column-gap: 20px;
+        padding: 50px 84px;
+    }
+    .about__content--title {
+        font-size: 48px;
+    }
+    .about__content--desc {
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+    .about__list--item {
+        width: 220px;
+        column-gap: 20px;
+        grid-template-columns: 62px 158px;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+    .about__item--image {
+        width: 62px;
+        height: 62px;
+    }
+    .about__item--num {
+        font-size: 32px;
+        line-height: 44.8px;
+    }
+    .about__items--subtitle {
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+}
