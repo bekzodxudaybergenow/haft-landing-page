@@ -396,6 +396,7 @@ body {
 :root {
   --main-font: "Inter", sans-serif;
   --zima-blue: #2C58F1;
+  --zima-blue-light: #F1F4FF;
   --text-color: #666666;
   --title-color: #262626;
   --white: #ffffff;
