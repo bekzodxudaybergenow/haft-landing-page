@@ -862,4 +862,95 @@ body {
     font-size: 24px;
     line-height: 33.6px;
   }
+}
+.benefits {
+  padding: 40px 0;
+}
+
+.benefits__content {
+  margin-bottom: 60px;
+}
+
+.benefits__content--price {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.6px;
+  color: var(--zima-blue);
+  margin-bottom: 4px;
+}
+
+.benefits__content--title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 18px;
+}
+
+.benefits__content--desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.6px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  list-style: none;
+}
+
+.benefits__list--item {
+  position: relative;
+  padding: 57px 22px 42px;
+  border-radius: 24px;
+  background-color: var(--zima-blue-light);
+}
+.benefits__list--item + * {
+  margin-top: 28px;
+}
+
+.benefits__list--item-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 48px;
+  position: absolute;
+  top: -20px;
+  border-radius: 14px;
+  background-color: var(--zima-blue);
+}
+
+.benefits__item--image {
+  width: 32px;
+  height: 32px;
+}
+
+.benefits__item--subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.benefits__item--desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+.benefits__item--link {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-decoration: none;
+}
+.benefits__item--link img {
+  width: 10px;
+  height: 16px;
 }/*# sourceMappingURL=main.css.map */
