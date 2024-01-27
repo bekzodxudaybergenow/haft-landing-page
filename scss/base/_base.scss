@@ -54,3 +54,25 @@ body {
     color: var(--text-color);
     line-height: 33.6px;
 }
+.price {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.6px;
+    color: var(--zima-blue);
+}
+.more {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-decoration: none;
+    color: var(--zima-blue);
+
+    & img {
+        width: 10px;
+        height: 16px;
+    }
+}

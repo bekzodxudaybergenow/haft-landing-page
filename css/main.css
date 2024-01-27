@@ -372,6 +372,30 @@ body {
   line-height: 33.6px;
 }
 
+.price {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.6px;
+  color: var(--zima-blue);
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-decoration: none;
+  color: var(--zima-blue);
+}
+.more img {
+  width: 10px;
+  height: 16px;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("/fonts/inter/Inter-Regular.woff2") format("woff2"), url("/fonts/inter/Inter-Regular.woff") format("woff");
