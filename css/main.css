@@ -365,6 +365,13 @@ body {
   margin: 0;
 }
 
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: var(--zima-blue);
+}
+
 .desc {
   font-weight: 400;
   font-size: 24px;
