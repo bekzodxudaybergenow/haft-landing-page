@@ -8,3 +8,8 @@ headerMenuBtn.addEventListener('click', () => {
     headerMenuSidebar.classList.toggle('header__nav--active');
     headerMenuBtn.classList.toggle('header__menu--close');
 })
+
+
+const ourselfSwiper = new Swiper(".ourself__swiper", {
+    spaceBetween: 10,
+});
