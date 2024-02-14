@@ -1562,20 +1562,30 @@ body {
   width: 42px;
   height: 42px;
   margin-bottom: 26px;
+  transition: opacity 0.2s ease;
+}
+.footer__logo:hover {
+  opacity: 0.8;
+}
+.footer__logo:active {
+  opacity: 1;
 }
 
 .footer__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 32px;
+  margin-bottom: 40px;
 }
 
 .footer__list--item {
   display: flex;
   flex-direction: column;
-  max-width: 190px;
+  max-width: 170px;
   width: 100%;
-  margin-bottom: 32px;
 }
 
 .footer__item--subtitle {
@@ -1589,44 +1599,51 @@ body {
   line-height: 22.4px;
   text-decoration: none;
   color: var(--title-color);
+  transition: opacity 0.2s ease;
 }
 .footer__item--link + * {
   margin-top: 10px;
 }
+.footer__item--link:hover {
+  opacity: 0.8;
+}
+.footer__item--link:active {
+  opacity: 1;
+}
 
-.footer__content--inner div {
+.footer__form div {
   max-width: 400px;
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
 }
 
-.footer__contact--subtitle {
+.footer__form--subtitle {
   line-height: 30px;
   margin-bottom: 12px;
 }
 
-.footer__inner--email,
-.footer__inner--btn {
+.footer__form--email,
+.footer__form--btn {
   height: 40px;
   font-size: 16px;
   border-radius: 3px;
   border: none;
 }
 
-.footer__inner--email {
+.footer__form--email {
   padding: 18px 20px;
   border: 1px solid var(--zima-blue-light);
   margin-bottom: 14px;
 }
-.footer__inner--email::-moz-placeholder {
+.footer__form--email::-moz-placeholder {
   color: var(--input-color);
 }
-.footer__inner--email::placeholder {
+.footer__form--email::placeholder {
   color: var(--input-color);
 }
 
-.footer__inner--btn {
+.footer__form--btn {
   color: var(--white);
   background-color: var(--zima-blue);
 }
@@ -1649,9 +1666,16 @@ body {
 }
 
 .footer__soacials--link img {
+  display: block;
   width: 20px;
   height: 20px;
-  display: block;
+  transition: opacity 0.2s ease;
+}
+.footer__soacials--link img:hover {
+  opacity: 0.6;
+}
+.footer__soacials--link img:active {
+  opacity: 1;
 }
 
 .footer__bottom--desc {
@@ -1668,26 +1692,31 @@ body {
   .footer__row {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 90px 250px 250px 44px;
+    grid-template-rows: 90px minmax(250px) auto 44px;
   }
   .footer__logo {
     grid-column: 1/3;
     margin-bottom: 48px;
   }
   .footer__list {
-    grid-column: 1/3;
-    margin-bottom: 60px;
+    grid-column: 1/2;
+    row-gap: 36px;
   }
   .footer__list--item {
     margin-bottom: 0;
   }
   .footer__contact {
-    display: flex;
-    -moz-column-gap: 80px;
-         column-gap: 80px;
-    margin-bottom: 60px;
+    grid-row: 2/3;
+    grid-column: 2/3;
   }
-  .footer__content--inner div {
+  .footer__contact--socials {
+    margin: 0;
+  }
+  .footer__form {
+    grid-column: 1/3;
+    margin-bottom: 30px;
+  }
+  .footer__form div {
     flex-direction: row;
     align-items: center;
     height: 60px;
@@ -1696,20 +1725,20 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(44, 88, 241, 0.1);
   }
-  .footer__inner--email,
-  .footer__inner--btn {
+  .footer__form--email,
+  .footer__form--btn {
     height: 48px;
     font-size: 16px;
     border-radius: 0;
     border: none;
   }
-  .footer__inner--email {
+  .footer__form--email {
     padding: 18px 16px 20px;
     font-size: 18px;
     margin: 0;
     outline: none;
   }
-  .footer__inner--btn {
+  .footer__form--btn {
     width: 110px;
     border-radius: 8px;
     color: var(--white);
@@ -1723,5 +1752,55 @@ body {
     text-align: center;
     padding-top: 24px;
     border-top: 1px solid #E5E5E5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__row {
+    display: grid;
+    grid-template-columns: 120px auto 400px;
+    grid-template-rows: repeat(3, auto);
+  }
+  .footer__logo {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  .footer__list {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  .footer__form {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 0;
+  }
+  .footer__form div {
+    margin: 0;
+  }
+  .footer__contact {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  .footer__bottom {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 80px 0 40px;
+  }
+  .footer__row {
+    display: grid;
+    grid-template-columns: auto 660px 400px;
+    grid-template-rows: repeat(3, auto);
+  }
+  .footer__list {
+    margin: 0;
+  }
+  .footer__form {
+    margin-bottom: 32px;
+  }
+  .footer__bottom {
+    margin-top: 64px;
   }
 }/*# sourceMappingURL=main.css.map */
