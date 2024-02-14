@@ -398,10 +398,28 @@ body {
   line-height: 33.6px;
   text-decoration: none;
   color: var(--zima-blue);
+  transition: opacity 0.2s ease;
 }
 .more img {
   width: 10px;
   height: 16px;
+}
+.more:hover {
+  opacity: 0.6;
+}
+.more:active {
+  opacity: 1;
+}
+
+.input-btn {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.input-btn:hover {
+  opacity: 0.8;
+}
+.input-btn:active {
+  opacity: 1;
 }
 
 @font-face {

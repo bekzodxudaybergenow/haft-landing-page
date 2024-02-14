@@ -77,9 +77,28 @@ body {
     line-height: 33.6px;
     text-decoration: none;
     color: var(--zima-blue);
+    transition: opacity .2s ease;
 
     & img {
         width: 10px;
         height: 16px;
+    }
+
+    &:hover {
+        opacity: .6;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.input-btn {
+    cursor: pointer;
+    transition: opacity .2s ease;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        opacity: 1;
     }
 }
