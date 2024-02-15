@@ -1,6 +1,6 @@
 Loyiha tuganlandi!\
 Figma: [Maket](https://www.figma.com/file/xoPC7gBUipHc1ASxN2CM0F/Haft---Landing-Page-Template-(Community)?type=design&node-id=353-2708&mode=design&t=xl3wZ3yjYcaf1PUz-0)\
-Netlify: [View]()
+Netlify: [View](https://half-landing-page-bb.netlify.app/)
 
 Qo'shimcha foydalanildi: TinyPNG, SVGOMG, swiper.js 
 
