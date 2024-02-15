@@ -454,7 +454,16 @@ body {
 }
 
 .header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   padding: 26px 0;
+  background-color: var(--white);
+  transition: box-shadow 0.4s ease;
+}
+
+.header.shadow {
+  box-shadow: 0 2px 15px 0 rgba(41, 40, 40, 0.3);
 }
 
 .header__row {
