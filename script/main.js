@@ -1,3 +1,4 @@
+let header = document.querySelector('.header');
 let headerMenuBtn = document.querySelector('.header__menu');
 let nav = document.querySelector('.nav');
 let headerMenuSidebar = document.querySelector('.header__menu--sidebar');
@@ -31,3 +32,13 @@ const ourselfSwiper = new Swiper(".ourself__swiper", {
         }
     }
 });
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        header.classList.add('shadow');
+    }
+    else {
+        header.classList.remove('shadow');
+    }
+})
+
